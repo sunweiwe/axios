@@ -37,6 +37,12 @@ router.get('/base/get', function(req, res) {
   res.json(req.query)
 })
 
+router.post('/base/post', function(req, res) {
+  res.json({
+    msg: 123
+  })
+})
+
 app.use(router)
 
 const port = process.env.PORT || 7000
